@@ -134,11 +134,11 @@ class QuickInsert extends BaseScrollFloat {
     const canInserFrontMatter = checkCanInsertFrontMatter(muya, block)
     const menuConfig = deepCopyArray(MENU_CONFIG)
 
-    if (!canInserFrontMatter) {
-      menuConfig
-        .find((menu) => menu.name === 'basic block')
-        .children.splice(2, 1)
-    }
+    // if (!canInserFrontMatter) {
+    //   menuConfig
+    //     .find((menu) => menu.name === 'basic block')
+    //     .children.splice(2, 1)
+    // }
     let result = menuConfig
     if (text !== '') {
       result = []

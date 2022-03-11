@@ -11,7 +11,6 @@ const renderIcon = (h, className, icon) => {
   const iconVnode = h('i.icon', h('i.icon-inner', {
     style: {
       background: `url(${icon}) no-repeat`,
-      'background-size': '100%'
     }
   }, ''))
 

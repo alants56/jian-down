@@ -94,6 +94,8 @@ class TableBarTools extends BaseFloat {
       } else {
         const offset = location === 'left' ? columnCount : columnCount + 1
         cursorBlock = table.insertColumn(offset)
+
+        console.log("table ===== ", table)
       }
 
       if (cursorBlock) {

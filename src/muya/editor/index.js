@@ -16,6 +16,9 @@ class Editor {
     const state = muya.options.json || muya.options.markdown || ''
     this.muya = muya
     this.jsonState = new JSONState(muya, state)
+
+    console.log(this.jsonState);
+
     this.inlineRenderer = new InlineRenderer(muya)
     this.selection = new Selection(muya)
     this.searchModule = new Search(muya)

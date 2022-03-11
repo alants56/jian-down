@@ -14,6 +14,12 @@ export default function loadImageAsync (imageInfo, attrs, className, imageClass)
     id = getUniqueId()
     loadImage(src, isUnknownType)
       .then(({ url, width, height }) => {
+         //======
+          // 图片过大超过最大宽度时设置为500
+          if (width > 500 && !attrs.width) {
+              attrs.width = 500
+          }
+         //=====
         const imageText = document.querySelector(`#${id}`)
         const img = document.createElement('img')
         img.src = url
