@@ -29,6 +29,6 @@ npm run serve
 pc端开发
 
 ```
-npm run 
+npm run dev
 ```
 
