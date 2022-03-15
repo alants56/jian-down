@@ -19,7 +19,7 @@
   transform-origin: top;
   opacity: 0;
 
-  transition: opacity .25s ease-in-out;
+  /*transition: opacity .25s ease-in-out;*/
 }
 
 .mu-float-container::-webkit-scrollbar:vertical {
